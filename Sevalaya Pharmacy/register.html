@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<title>Register Form Design</title>
+ <!--Google Fonts-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--Fonts Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1>Sevalaya Pharmacy </h1>
+        <div class="navbar-links">
+            <p class="navbar-link"> <a href="index.html">Home</a> </p>
+            <p class="navbar-link"> <a href="cart.php">Products</a> </p>
+            <p class="navbar-link"> <a href="search.php">Medicines</a> </p>
+            <p class="navbar-link"> <a href="shopproducts.php">Shop</a> </p> 
+            <p class="navbar-link"> <a href="">About Us</a> </p>
+            <p class="navbar-link"> <a href="login.html">Login</a> </p>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- side navbar -->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"> <a href="">Home</a> </p>
+            <p class="side-navbar-link"> <a href="">Products</a> </p>
+            <p class="side-navbar-link"> <a href="">Medicines</a> </p>
+            <p class="side-navbar-link"> <a href="">About Us</a> </p>
+        </div>
+    </div>
+
+
+    <div class="box">
+    <img src="img/registerprofile.jpg" class="user">
+
+        <h1>Register Here</h1>
+
+        <form name="myform2" action="register.php" method="POST">
+
+            <p>  <i class="fa-solid fa-user"></i> Username</p> 
+            <input type="text" name="uname1" placeholder="Enter Username" required="">  
+
+            <p> <i class="fa-solid fa-envelope"></i> Email</p>
+            <input type="Email" name="email" placeholder="Enter email id" required="">
+
+            <p> <i class="fa-solid fa-lock"></i> Password</p>
+            <input type="password" name="upswd1" placeholder="Enter Password" required="">
+
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+            <a href="login.html">Existing user?</a>
+        </form>
+        
+    </div>
+  <!-- Javascript -->
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color: white;
+    font-weight: bold;
+}
+
+.navbar h1{
+    color: #22823a;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 25px;
+}
+
+.navbar-links a{
+text-decoration: none;
+color: #22823a; 
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: black; 
+}
+
+.navbar-menu-toggle {
+    display: none;
+} 
+
+.side-navbar{
+    background-color: #22823a;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 1.5s;
+}
+
+.side-navbar-link{
+    margin-bottom: 25px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.header-btn {
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ margin-top: 10px;
+ background-color: #22823a;
+ color: white;
+ cursor: pointer;   
+ border-radius: 7px;
+ justify-content: center;
+}
+
+.header-btn :hover{
+    background-color: aqua;
+    cursor: pointer; 
+
+}
+
+.header-img{
+    border-radius: 10px;
+}
+
+.service{
+    padding: 20px;
+}
+
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container2 div{
+    background-color: lightgreen;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.Health-Device{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.health-device-container{
+    position: relative;
+    flex-basis: 20%;
+}
+
+.health-device-container p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Health-Device button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.products_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.products_center input{
+    padding: 10px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+    border-radius: 5px;
+}
+
+.products_center button{
+    margin-top: 10px;
+    color: white;
+    background-color: #22823a;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
+@media screen and (max-width:600px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .service-container1{
+        display: none;
+    }
+
+    .service-container2{
+        flex-direction: column;
+    }
+}

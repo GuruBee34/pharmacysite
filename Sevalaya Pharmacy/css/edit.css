@@ -1,0 +1,74 @@
+/* .edit_container{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 5rem;
+    height: 400px;
+    background-color: whitesmoke;  
+    color: black;
+}
+
+.update_form{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+} */
+
+.edit_container{ 
+    background: cadetblue ;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 90px 30px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+input[type="text"], input[type="number"] input[type="file"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: white;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    
+}
+
+.update_btn,
+.cancel_btn {
+  display: absolute;
+  width: 40%;
+  text-align: center;
+  justify-content: center;
+  background-color: #22823a;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+/* .cancel_btn {
+  background-color: var(--red);
+  margin: 2rem auto;
+} */
+
+.message span {
+  font-size: 1.5rem;
+}
+.message i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.message i:hover {
+  color: var(--red);
+}
+
+
+
